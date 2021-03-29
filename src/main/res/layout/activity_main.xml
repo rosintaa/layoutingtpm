@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="40dp"
+    android:paddingTop="80dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="395dp"
+        android:layout_height="324dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:id="@+id/ll_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_pertama">
+
+        <EditText
+            android:id="@+id/et_kedua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:padding="16dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pertama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/ll_ketiga">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_pertama"
+            android:hint="Password"
+            android:padding="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_ketiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_satu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_dua"
+            android:backgroundTint="#E91E63"
+            android:text="LOGIN" />
+
+        <Button
+            android:id="@+id/btn_dua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_dua"
+            android:layout_toRightOf="@+id/btn_satu"
+            android:backgroundTint="#E91E63"
+            android:text="DAFTAR" />
+    </LinearLayout>
+</RelativeLayout>
